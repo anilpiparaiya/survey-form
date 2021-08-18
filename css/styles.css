@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-  background-image: url("images/coding.jpg");
+  background-image: url("../images/coding.jpg");
   position: fixed;
   top: 0;
   left: 0;
