@@ -4,12 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/styles.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
 </head>
 
 <body>
-    <h1 id="title">Tell me about your coding journey</h1>
+    <div class="main">
+        <h1 id="title">Your coding journey</h1>
+        <p id="description">This is a survey where you can tell us about your own coding journey</p>
+        <div class="main-content">
+
+            <form action="" id="survey-form">
+                <div class="form-control">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Bill Gates" required />
+                </div>
+
+                <div class="form-control">
+                    <label id="email-label" class="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="gates@outlook.com" required>
+                </div>
+
+                <div class="form-control">
+                    <label id="number-label" class="number" for="number">Age</label>
+                    <input type="number" name="number" id="number" placeholder="40" min="0" max="100" required><br>
+                </div>
+                <div class="form-control">
+                    <label id="gender" for="name">Gender
+                        <div class="gender">
+                            <input type="radio" name="gender" value="1">Male</input>
+                            <input type="radio" name="gender" value="2">Female</input>
+                            <input type="radio" name="gender" value="3">Other</input><br></div></label>
+                    <!-- 
+                    <input type="radio" name="gender" value="1">Male</input>
+                    <input type="radio" name="gender" value="2">Female</input>
+                    <input type="radio" name="gender" value="3">Other</input> -->
+
+
+                </div>
+                <div class="form-control">
+                    <label for="current-role">Which option best describe your current Position</label>
+                    <select name="role" id="role">
+                        <option value="select">
+                            select
+                        </option>
+                        <option value="student">I am Student </option><br>
+                        <option value="dropout">
+                            I am a College Dropout
+                        </option>
+                        <option value="graduate">I am a college graduate</option>
+                        <option value="full-time">Full-time </option>
+
+                        <option value="part-time">Part-time</option>
+                        <option for="not">prefer not to say</option>
+                        <option value="others">
+                            Others
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="journey">How was this journey for you ? <small>(Check all that
+                            apply)</small></label>
+
+
+                    <label value="easy"><input type="checkbox" name="easy" id="journey-1"> Piece of cake</label>
+                    <label value="simple"><input type="checkbox" name="simple" id="journey-2">Simple but time
+                        taking</label>
+                    <label value="hard"><input type="checkbox" name="hard" id="journey-3">Hard but I am good at
+                        logic
+                        building</label>
+                    <label value="not for me"><input type="checkbox" name="not for me" id="journey-4">Coding was not
+                        meant
+                        for me</lab>
+                        <label value="freecodecamp"><input type="checkbox" name="freecodecamp"
+                                id="journey-5">freecodecamp
+                            is always be
+                            there for me</label>
+
+                </div>
+                <br>
+                <div class="form-control">
+                    <label for="resources">How much academic courses helpful for you:</label>
+                    <select id="dropdown" for="dropdown" name="Preferred Resources">
+                        <option value="">Not at all helpful</option>
+                        <option value="online">Less helpful</option>
+                        <option value="bootcamp">Waste of money and time</option>
+                        <option value="research">Research Papers</option>
+                        <option value="articles">Latest Tech Articles</option>
+                        <option value="freecodecamp">freecodecamp</option>
+                    </select>
+
+                </div>
+                <br>
+
+
+                <fieldset>
+                    <legend>Would you recommend some useful resources for a newbie programmer </legend>
+                    <div class="form-control">
+                        <label for="recommend-1"><input type="radio" name="recommend" checked id="definitely"
+                                value="definitely">Definitely</label><br>
+
+                        <label for="recommend-2"><input type="radio" name="recommend" id="maybe"
+                                value="maybe">Maybe</label><br>
+
+
+                        <label for="recommend-3"> <input type="radio" name="recommend" id="notsure" value="not-sure">Not
+                            Sure</label><br>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <br>
+                <div class="form-control">
+                    <label for="resources">What are the courses/resources that helps you in your journey:</label>
+                    <select class="resources" for="resources" name="Preferred Resources">
+                        <option value="select">Select</option>
+                        <option value="open-source">Open Source and Hackathons </option>
+                        <option value="community">Developers Community</option>
+                        <option value="bootcamp">In person bootcamp</option>
+                        <option value="research">Research Papers</option>
+                        <option value="articles">Latest Tech Articles</option>
+                        <option value="freecodecamp">freecodecamp Projects</option>
+                    </select>
+
+                </div>
+                <br>
+
+                <label>Any comments or suggestion for the community
+                </label>
+                <textarea name="" id="comments" for="comment" cols="50" rows="10"
+                    placeholder="Additional Comments"></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
